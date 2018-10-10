@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="col text-center">
+        <form action="/compare" enctype="multipart/form-data" method="post">
+            <input type="file" name='file1' placeholder="File 1" />
+            <input type="file" name='file2' placeholder='File 2' />
+
+            <fieldset>
+        <legend>Select an Algorithm</legend>
+
+        <div>
+            <input type="radio" id="lines"
+                   name="algorithm" value="lines" checked />
+            <label for="lines">lines</label>
+        </div>
+
+        <div>
+            <input type="radio" id="sentences"
+                   name="algorithm" value="sentences" />
+            <label for="sentences">sentences</label>
+        </div>
+
+        <div>
+            <input type="radio" id="substring"
+                   name="algorithm" value="substring" />
+            <label for="substring">substring</label>
+        </div>
+
+    </fieldset>
+
+            <input type='number' name='length' placeholder='Length' />
+
+            <input type="submit" value='compare' />
+
+        </form>
+    </div>
+
+{% endblock %}

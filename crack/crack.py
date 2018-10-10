@@ -19,7 +19,7 @@ def main():
 letter = 'a–zA–Z'# OR "\0abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 strHash = sys.argv[1]
 
-# chr salt[3]
+#char salt[3]; --- python equivalent?
 
     # char *crypt(const char *key, const char *salt);
     # salt is a two-character string chosen from the set [a–zA–Z0–9./].
