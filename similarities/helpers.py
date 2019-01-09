@@ -23,7 +23,7 @@ def substrings(a, b, n):
     """Return substrings of length n in both a and b"""
 
     def tokenize(str, n):
-        """Helper function to tokenize a and b"""
+        """Helper function to incorporate n into a and b"""
         substrings = []
 
         for i in range(len(str) - n + 1):

@@ -20,7 +20,7 @@ def main():
 
     # Get string from user
     plaintext = get_string("Plaintext: ")
-    print("Ciphertext: ", end='')
+    print("ciphertext: ", end='')
 
     for i in range(len(plaintext)):
         # If char is UPPERCASE
